@@ -12,10 +12,9 @@ df = pd.read_csv('Cleaned_HDB_Resale_Prices.csv')
 
 st.set_page_config(page_title='Group 2',page_icon='💻',layout='wide')
 
-col = st.columns([1,2,1])
-middle = col[1]
+col1,col2,col3 = st.columns([1,2,1])
 
-with middle:
+with col2:
     st.header('Group 2')
     st.subheader('Meet Our Team! :wave:')
     
@@ -30,15 +29,15 @@ with middle:
     for member in members:
         st.write(f'- **{member['name']}**   ({member['role']})')
 
-    with right_col:
-        with open('team.json','r') as f:
-            team_gif = json.load(f)
-        st_lottie(team_gif,height=350,key='team')
+with col3:
+    with open('team.json','r') as f:
+        team_gif = json.load(f)
+    st_lottie(team_gif,height=350,key='team')
 
+with col2:
     st.write('---')
 
-with middle:
-    st.header('Workflow Overview')
+    st.subheader('Workflow Overview')
     st.write(
         '''
         - Data Cleaning on the original HDB Resale Prices dataset
@@ -49,6 +48,7 @@ with middle:
         - Present out findings and insights
         '''
     )
+with col3:
     with open('charts.json','r') as f:
         chart_gif = json.load(f)
     st_lottie(chart_gif,height=350,key='chart')
