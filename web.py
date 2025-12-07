@@ -13,9 +13,11 @@ df = pd.read_csv('Cleaned_HDB_Resale_Prices.csv')
 st.set_page_config(page_title='Group 2',page_icon='💻',layout='wide')
 
 with st.container():
-    left_col,right_col = st.columns(2)
-    with left_col:
-        st.title('Group 2')
+    col = st.columns([1,2,1])
+    middle = col[1]
+    
+    with middle:
+        st.header('Group 2')
         st.subheader('Meet Our Team! :wave:')
         
         members = [
@@ -29,12 +31,12 @@ with st.container():
         for member in members:
             st.write(f'- **{member['name']}**   ({member['role']})')
 
-    with right_col:
-        with open('team.json','r') as f:
-            team_gif = json.load(f)
-        st_lottie(team_gif,height=350,key='team')
+    # with right_col:
+    #     with open('team.json','r') as f:
+    #         team_gif = json.load(f)
+    #     st_lottie(team_gif,height=350,key='team')
 
-    st.write('---')
+    # st.write('---')
 
 with st.container():
     
