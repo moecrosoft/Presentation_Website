@@ -40,7 +40,7 @@ with st.container():
     
     left_column, right_column = st.columns(2)
     with left_column:
-        st.header('Building ML Models to predict HDB Resale Prices')
+        st.header('Workflow Overview')
         st.write(
             '''
             - Data Cleaning on the original HDB Resale Prices dataset
