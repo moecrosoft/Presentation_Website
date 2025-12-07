@@ -12,10 +12,11 @@ df = pd.read_csv('Cleaned_HDB_Resale_Prices.csv')
 
 st.set_page_config(page_title='Group 2',page_icon='💻',layout='wide')
 
+st.header('Group 2')
+
 col1,col2,col3 = st.columns([1,2,1])
 
 with col2:
-    st.header('Group 2')
     st.subheader('Meet Our Team! :wave:')
     
     members = [
