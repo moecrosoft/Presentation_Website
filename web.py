@@ -42,7 +42,7 @@ with col2:
         - EDA to analyse the original dataset
         - Feature Engineering to create new features
         - Build ML models to predict HDB Resale Prices
-        - Do EDA on model feature importances
+        - EDA on model feature importances
         - Present our findings and insights
         '''
     )
