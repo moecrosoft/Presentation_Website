@@ -39,11 +39,11 @@ with col2:
     st.write(
         '''
         - Data Cleaning on the original HDB Resale Prices dataset
-        - Do EDA to analyse the original dataset
+        - EDA to analyse the original dataset
         - Feature Engineering to create new features
         - Build ML models to predict HDB Resale Prices
         - Do EDA on model feature importances
-        - Present out findings and insights
+        - Present our findings and insights
         '''
     )
 # with col3:
