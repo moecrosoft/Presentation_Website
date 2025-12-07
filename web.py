@@ -35,7 +35,6 @@ st.write('---')
 #         team_gif = json.load(f)
 #     st_lottie(team_gif,height=350,key='team')
 
-with col2:
     st.subheader('Workflow Overview')
     st.write(
         '''
