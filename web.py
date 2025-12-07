@@ -29,7 +29,7 @@ with col2:
     for member in members:
         st.write(f'- **{member['name']}**   ({member['role']})')
         
-st.write('---')
+    st.write('---')
 # with col3:
 #     with open('team.json','r') as f:
 #         team_gif = json.load(f)
