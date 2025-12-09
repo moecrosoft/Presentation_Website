@@ -100,7 +100,7 @@ with st.container():
         st.write('''
         - The model shows that lease related features do influence resale prices, but less strongly than flat attributes such as floor area and accessibility.
         - According to our research, HDB flats suffer a sharp depreciation in resale value around the 35 year mark of their lease, however this depreciation is not uniform across all towns. 
-        ### **Depreciation in resale value can be mediated by Location / Accessibility**
+        ##### **Depreciation in resale value can be mediated by Location / Accessibility**
         - Amenities / Accessibility has greater importance resale price of HDB flat
         - Less mature towns rely on locational attributes to maintain value
         ''')
