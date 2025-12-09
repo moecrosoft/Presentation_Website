@@ -54,7 +54,7 @@ with col2:
 st.write('---')
 
 
-    # Create simple feature categories based on naming patterns
+# Create simple feature categories based on naming patterns
 def assign_category(x):
     x = x.lower()
     if 'dist' in x or 'cbd' in x or 'mall' in x or 'mrt' in x:
@@ -104,7 +104,7 @@ with st.container():
         Less mature towns rely on locational attributes to maintain value
         ''')
         
- st.write('---')   
+st.write('---')   
         
 
 # with st.container():
