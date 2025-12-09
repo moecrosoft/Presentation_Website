@@ -149,8 +149,15 @@ with st.container():
         st.write('''
         - There is a sharp jump in the resale prices of HDBs from 2019-2020 which coincides with the COVID-19 pandemic. 
         - Construction delays led to a surge in demand of resale flats: BTOs got delayed (92 projects) which pushed people towards resale flats
-        - Year is also a top feature in our ML model which shows that market inflation (macroeconomic factors) contributes greatly to resale prices and not just flat attributes.
+        
         ''')
+        st.write('')
+        st.write('')
+        st.write('')
+        st.write('')
+        st.write('')
+        st.write('')
+        st.write('- Year is also a top feature in our ML model which shows that market inflation (macroeconomic factors) contributes greatly to resale prices and not just flat attributes.')
         
 
 # with st.container():
