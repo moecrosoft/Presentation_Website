@@ -141,6 +141,7 @@ with st.container():
         # Rename Labels for Display Only 
         corr = corr.rename(index=label_mapping, columns=label_mapping)
 
+        fig, ax = plt.subplots(figsize=(18,9))
         sns.heatmap(corr, annot=True, cmap='Blues', fmt=".2f", square=True)
         ax.set_title("Heatmap of Most Influential Variables", fontsize=20)
         ax.set_xticklabels(ax.get_xticklabels(), rotation=45,ha='right')
