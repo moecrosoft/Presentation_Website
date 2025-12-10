@@ -182,7 +182,7 @@ with st.container():
         )
 
         ax.set_title('Distribution of Floor Area (sqm)', fontsize=20)
-        ax.set_xlabel('Floor Area (sqm)'', fontsize=16)
+        ax.set_xlabel('Floor Area (sqm)', fontsize=16)
         ax.set_ylabel('Density', fontsize=16)
         st.pyplot(fig, use_container_width=True)
 
