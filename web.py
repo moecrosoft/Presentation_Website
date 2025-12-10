@@ -48,6 +48,22 @@ with col2:
         - Present our findings and insights
         '''
     )
+
+    st.subheader('Machine Learning')
+    st.write(
+        '''
+        - Load the Feature Engineered Dataset into a dataframe
+        - Split the dataset into features and target
+        - Create training and testing sets
+        - Define evaluation functions
+        - Build a preprocessor pipeline for the data
+        - Create a Linear Regression model pipeline and evaluate the model
+        - Create a Random Forest model pipeline and evaluate the model
+        - Compare the performances of the two models
+        - Create a feature importances dataframe from the better performing model
+        - Export the dataframe as csv to facilitate further analysis
+        '''
+    )
 # with col3:
 #     with open('charts.json','r') as f:
 #         chart_gif = json.load(f)
@@ -192,6 +208,7 @@ with st.container():
         - The right-skew indicates that larger flats are less common, and the KDE curve highlights distinct clusters rather than a smooth spread. 
         - This supports the insight that floor area is the strongest predictor of resale price, as buyers consistently pay more for additional space.
         ''')
+
 
 # with st.container():
 #     left_col,right_col = st.columns(2)
