@@ -245,6 +245,7 @@ with st.container():
         st.pyplot(fig, use_container_width=True)
 
     with right_col:
+        st.subheader('Floor Area Distribution')
         st.write('''
         - The floor area distribution shows clear peaks around 70–120 sqm, reflecting the standard sizes of common HDB flat types
         - The right-skew indicates that larger flats are less common, and the KDE curve highlights distinct clusters rather than a smooth spread
