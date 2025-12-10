@@ -7,6 +7,7 @@ import seaborn as sns
 import pandas as pd
 import plotly.figure_factory as ff
 import pydeck as pdk
+from PIL import Image
 
 df = pd.read_csv("HDB_Resale_Prices_Data_Engineered.csv")
 
@@ -95,6 +96,13 @@ with col2:
         - Export the dataframe as csv to facilitate further analysis
         '''
     )
+
+    st.markdown("<hr style='border: 2px solid #bbb;'>", unsafe_allow_html=True)
+
+    st.subheader('Machine Learning Models Comparison')
+
+    img = Image.open('ML.jpg')
+    st.image(img,caption='ML Models Comparison',use_column_width=True)
 
 # with col3:
 #     with open('charts.json','r') as f:
