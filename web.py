@@ -419,6 +419,15 @@ with st.container():
         
 st.markdown("<hr style='border: 2px solid #bbb;'>", unsafe_allow_html=True)
 
+col1,col2,col3 = st.columns([1,2,1])
+
+with col2:
+    st.subheader('Conclusion')
+    st.write('''
+    - Although we have reached a high prediction accuracy, HDB resale price is more nuanced than what has been discussed in this model. 
+    - There are many other factors such as Government Regulations, age distribution in certain towns as well as the priorities of the buyers, that can greatly impact the resale value as well as the percieved value of a HDB.
+    ''')
+
 # with st.container():
 #     left_col,right_col = st.columns(2)
 #     with left_col:
