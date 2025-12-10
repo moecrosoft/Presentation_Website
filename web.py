@@ -191,6 +191,7 @@ st.markdown("<hr style='border: 2px solid #bbb;'>", unsafe_allow_html=True)
 with st.container():
     left_col,right_col = st.columns(2)
     with left_col:
+        top10 = df_imp.head(10)
         fig1, ax1 = plt.subplots(figsize=(18,9))
         sns.barplot(data=top10, x='importance', y='feature', hue='feature', palette='viridis', dodge=False, ax=ax1)
         ax1.set_title('Top 10 Most Important Features Influencing Resale Prices', fontsize=20)
