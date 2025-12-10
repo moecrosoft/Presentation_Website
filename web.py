@@ -251,6 +251,19 @@ with st.container():
         - This supports the insight that floor area is the strongest predictor of resale price, as buyers consistently pay more for additional space.
         ''')
 
+with st.container():
+    left_col,right_col = st.columns(2)
+    with left_col:
+        img1 = Image.open('Photo_1.jpg')
+        st.image(img1,use_column_width=True)
+    with right_col:
+        st.subheader('Lease age and Depreciation')
+        st.write('''
+        ##### **Lease age matters more for mid-aged flats than very old ones due to diminishing marginal impact.**
+        - Remaining_lease_years has less importance than lease_commence_year.
+        - For flats above 30 years of age, depreciation due to lease loss slows. 
+        - Could be due to Government Schemes, Locational advantages and Home Improvement Programmes.
+        ''')
 
 # with st.container():
 #     left_col,right_col = st.columns(2)
