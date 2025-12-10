@@ -106,6 +106,8 @@ with col2:
     img = Image.open('ML.jpg')
     st.image(img,use_column_width=True)
 
+    st.markdown("<hr style='border: 2px solid #bbb;'>", unsafe_allow_html=True)
+
     st.subheader('The HDB Resale Market ')
     st.write('The hdb resale market is dominated by a few well defined structural factors')
     st.write('')
