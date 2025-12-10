@@ -15,7 +15,7 @@ df_imp = pd.read_csv("HDB_Resale_Prices_Features_Importances.csv")
 
 st.set_page_config(page_title='Group 2',page_icon='💻',layout='wide')
 
-col1,col2,col3 = st.columns([1,2,1])
+col1,col2,col3 = st.columns([1,1,1])
 
 with col2:
     qr = Image.open('qr.jpg')
