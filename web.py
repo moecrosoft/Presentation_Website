@@ -162,7 +162,7 @@ st.markdown("<hr style='border: 2px solid #bbb;'>", unsafe_allow_html=True)
 
 
 with st.container():
-    left_col,right_col = st.column(2)
+    left_col,right_col = st.columns(2)
     with left_col:
         fig, ax = plt.subplots(figsize=(18,9))
         sns.histplot(
