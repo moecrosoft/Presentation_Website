@@ -270,6 +270,30 @@ with st.container():
 with st.container():
     left_col,right_col = st.columns(2)
     with left_col:
+        df_imp = df_imp[df_imp['feature'] != 'resale_price']
+        
+        # Top 10 most important features from feature importances CSV
+        top_features = df_imp.head(10)['feature'].tolist()
+        
+        # Check which of these exist in the engineered dataset
+        available_features = [f for f in top_features if f in df.columns]
+        missing_features   = [f for f in top_features if f not in df.columns]
+        
+        # Build a subset using only features that exist + resale_price
+        corr_subset = df[available_features + ['resale_price']]
+        
+        # Correlation matrix
+        corr_matrix = corr_subset.corr()
+        
+        # Correlation values with resale_price (sorted)
+        corr_with_price = corr_matrix['resale_price'].sort_values(ascending=False)
+        corr_with_price
+        
+        # Prettify labels
+        label_map = {col: col.replace('_', ' ').title() for col in corr_matrix.columns}
+        label_map['resale_price'] = 'Resale Price'   # custom rename
+        
+        corr_matrix_pretty = corr_matrix.rename(index=label_map, columns=label_map)
         fig, ax = plt.subplots(figsize=(10,5))
         sns.heatmap(
         corr_matrix_pretty, 
