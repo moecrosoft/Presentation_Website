@@ -51,6 +51,35 @@ with col2:
 
     st.markdown("<hr style='border: 2px solid #bbb;'>", unsafe_allow_html=True)
 
+    st.subheader('Exploratory Data Analysis (EDA)')
+    st.write(
+        '''
+        - For the EDA, we explored the original HDB resale dataset to understand key patterns, trends, and relationships in the data. 
+        - This included analysing price distributions, identifying influential variables such as floor area, lease years, and accessibility, and examining temporal trends in resale prices. 
+        - These insights helped guide our feature engineering and informed which factors were most relevant for building accurate prediction models.
+        '''
+    )
+
+    st.markdown("<hr style='border: 2px solid #bbb;'>", unsafe_allow_html=True)
+
+    st.subheader('Feature Engineering')
+    st.write(
+        '''
+        - Feature Engineering is Where the Model Learns “Intelligence”
+        - Raw data alone cannot explain resale prices well
+        - Feature engineering transforms simple data into meaningful signals the model can use
+        - Turned Raw HDB Data Into Structured Insights
+        - Added Real-World Singapore Context
+        - Integrated external datasets to reflect actual factors buyers care about
+        - Engineered 80+ New Features Across Key Domains
+        - Improved Model Accuracy Significantly
+        - Created Features That Are Both Predictive and Interpretable
+        - Ensures Our Final ML Model Reflects Real Singapore Housing Dynamics
+        '''
+    )
+
+    st.markdown("<hr style='border: 2px solid #bbb;'>", unsafe_allow_html=True)
+
     st.subheader('Machine Learning')
     st.write(
         '''
@@ -66,6 +95,7 @@ with col2:
         - Export the dataframe as csv to facilitate further analysis
         '''
     )
+
 # with col3:
 #     with open('charts.json','r') as f:
 #         chart_gif = json.load(f)
