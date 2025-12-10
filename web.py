@@ -125,7 +125,6 @@ with st.container():
         ax.set_title('Average Resale Price by Quarter', fontsize=20)
         ax.set_xlabel('Year - Quarter', fontsize=16)
         ax.set_ylabel('Average Resale Price ($)', fontsize=16)
-        ax.tick_params(axis='both', labelsize=14)
         st.pyplot(fig, use_container_width=True)
     
         # Top 10 features barplot
@@ -160,6 +159,39 @@ with st.container():
         st.write('- Year is also a top feature in our ML model which shows that market inflation (macroeconomic factors) contributes greatly to resale prices and not just flat attributes.')
 
 st.markdown("<hr style='border: 2px solid #bbb;'>", unsafe_allow_html=True)
+
+
+with st.container():
+    left_col,right_col = st.column(2)
+    with left_col:
+        fig, ax = plt.subplots(figsize=(18,9))
+        sns.histplot(
+        df['resale_price'],
+        bins='fd',
+        stat='density',
+        color='skyblue',
+        alpha=0.6,
+        label='Histogram'
+        )
+    
+        sns.kdeplot(
+            df['resale_price'],
+            color='red',
+            linewidth=2,
+            label='KDE Curve'
+        )
+
+        ax.set_title('Distribution of Resale Price', fontsize=20)
+        ax.set_xlabel('Resale price($)', fontsize=16)
+        ax.set_ylabel('Density', fontsize=16)
+        st.pyplot(fig, use_container_width=True)
+
+    with right_col:
+        st.write('''
+        - The floor area distribution shows clear peaks around 70–120 sqm, reflecting the standard sizes of common HDB flat types.
+        - The right-skew indicates that larger flats are less common, and the KDE curve highlights distinct clusters rather than a smooth spread. 
+        - This supports the insight that floor area is the strongest predictor of resale price, as buyers consistently pay more for additional space.
+        ''')
 
 # with st.container():
 #     left_col,right_col = st.columns(2)
