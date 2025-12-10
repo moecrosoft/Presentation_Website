@@ -21,6 +21,12 @@ with col3:
     qr = Image.open('qr.jpg')
     st.image(qr,use_column_width=True)
 
+col1,col2,col3 = st.columns([1,2,1])
+
+with col3:
+    qr = Image.open('qr.jpg')
+    st.image(qr,use_column_width=True)
+
 with col2:
     st.markdown('# Group 2')
     st.subheader('Meet Our Team! :wave:')
