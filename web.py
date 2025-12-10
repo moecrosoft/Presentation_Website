@@ -55,9 +55,9 @@ with col2:
     st.subheader('Exploratory Data Analysis (EDA)')
     st.write(
         '''
-        - For the EDA, we explored the original HDB resale dataset to understand key patterns, trends, and relationships in the data. 
-        - This included analysing price distributions, identifying influential variables such as floor area, lease years, and accessibility, and examining temporal trends in resale prices. 
-        - These insights helped guide our feature engineering and informed which factors were most relevant for building accurate prediction models.
+        - For the EDA, we explored the original HDB resale dataset to understand key patterns, trends, and relationships in the data
+        - This included analysing price distributions, identifying influential variables such as floor area, lease years, and accessibility, and examining temporal trends in resale prices
+        - These insights helped guide our feature engineering and informed which factors were most relevant for building accurate prediction models
         '''
     )
 
@@ -204,7 +204,7 @@ with st.container():
         st.write('')
         st.subheader('Year of HDB sale and Resale Price')
         st.write('''
-        - There is a sharp jump in the resale prices of HDBs from 2019-2020 which coincides with the COVID-19 pandemic. 
+        - There is a sharp jump in the resale prices of HDBs from 2019-2020 which coincides with the COVID-19 pandemic
         - Construction delays led to a surge in demand of resale flats: BTOs got delayed (92 projects) which pushed people towards resale flats
         
         ''')
@@ -246,9 +246,9 @@ with st.container():
 
     with right_col:
         st.write('''
-        - The floor area distribution shows clear peaks around 70–120 sqm, reflecting the standard sizes of common HDB flat types.
-        - The right-skew indicates that larger flats are less common, and the KDE curve highlights distinct clusters rather than a smooth spread. 
-        - This supports the insight that floor area is the strongest predictor of resale price, as buyers consistently pay more for additional space.
+        - The floor area distribution shows clear peaks around 70–120 sqm, reflecting the standard sizes of common HDB flat types
+        - The right-skew indicates that larger flats are less common, and the KDE curve highlights distinct clusters rather than a smooth spread
+        - This supports the insight that floor area is the strongest predictor of resale price, as buyers consistently pay more for additional space
         ''')
         
 st.markdown("<hr style='border: 2px solid #bbb;'>", unsafe_allow_html=True)
@@ -257,14 +257,27 @@ with st.container():
     left_col,right_col = st.columns(2)
     with left_col:
         img1 = Image.open('Photo_1.jpg')
-        st.image(img1,use_column_width=True)
+        st.image(img1,caption='lease_commence_year and remaining_lease_years are in our top features',use_column_width=True)
     with right_col:
         st.subheader('Lease age and Depreciation')
         st.write('''
-        ###### **Lease age matters more for mid-aged flats than very old ones due to diminishing marginal impact.**
-        - Remaining_lease_years has less importance than lease_commence_year.
-        - For flats above 30 years of age, depreciation due to lease loss slows. 
-        - Could be due to Government Schemes, Locational advantages and Home Improvement Programmes.
+        ###### **Lease age matters more for mid-aged flats than very old ones due to diminishing marginal impact**
+        - Remaining_lease_years has less importance than lease_commence_year
+        - For flats above 30 years of age, depreciation due to lease loss slows
+        - Could be due to Government Schemes, Locational advantages and Home Improvement Programmes
+        ''')
+        
+with st.container():
+    left_col,right_col = st.columns(2)
+    with left_col:
+        img2 = Image.open('Photo_2.jpg')
+        st.image(img2,use_column_width=True)
+    with right_col:
+        st.subheader('However, their correlation to resale value is weaker than floor area and year of sale')
+        st.write('''
+        - We can deduce that as the flat ages, loss of lease years depreciates lease value less sharply
+        - For flats above 30 years of age, depreciation due to lease loss slows
+        - Could be due to Government Schemes, Locational advantages and Home Improvement Programmes
         ''')
 
 # with st.container():
