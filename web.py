@@ -49,6 +49,8 @@ with col2:
         '''
     )
 
+    st.markdown("<hr style='border: 2px solid #bbb;'>", unsafe_allow_html=True)
+
     st.subheader('Machine Learning')
     st.write(
         '''
