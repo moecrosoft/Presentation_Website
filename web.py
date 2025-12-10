@@ -115,7 +115,7 @@ st.markdown("<hr style='border: 2px solid #bbb;'>", unsafe_allow_html=True)
 
 with st.container():
     img3 = Image.open('Photo_3.jpg')
-    st.image(img1,caption='lease_commence_year and remaining_lease_years are in our top features',use_column_width=True)
+    st.image(img3,caption='lease_commence_year and remaining_lease_years are in our top features',use_column_width=True)
 
 st.markdown("<hr style='border: 2px solid #bbb;'>", unsafe_allow_html=True)
 
