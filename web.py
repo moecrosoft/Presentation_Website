@@ -287,7 +287,6 @@ with st.container():
         
         # Correlation values with resale_price (sorted)
         corr_with_price = corr_matrix['resale_price'].sort_values(ascending=False)
-        corr_with_price
         
         # Prettify labels
         label_map = {col: col.replace('_', ' ').title() for col in corr_matrix.columns}
@@ -303,6 +302,8 @@ with st.container():
         square=True
         )
         ax.set_title("Correlation Between Important Features and Resale Price", fontsize=20)
+        ax.set_xticklabels(ax.get_xticklabels(), rotation=0, ha='center')
+        ax.set_yticklabels(ax.get_yticklabels(), rotation=0, va='center')
         st.pyplot(fig, use_container_width=True)
         
     with right_col:
