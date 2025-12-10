@@ -272,7 +272,7 @@ with st.container():
     with left_col:
         img2 = Image.open('Photo_2.jpg')
         img2 = img2.resize((300,300))
-        st.image(img2,use_column_width=True,height=200)
+        st.image(img2,use_column_width=True)
     with right_col:
         st.subheader('However, their correlation to resale value is weaker than floor area and year of sale')
         st.write('''
