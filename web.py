@@ -250,6 +250,8 @@ with st.container():
         - The right-skew indicates that larger flats are less common, and the KDE curve highlights distinct clusters rather than a smooth spread. 
         - This supports the insight that floor area is the strongest predictor of resale price, as buyers consistently pay more for additional space.
         ''')
+        
+st.markdown("<hr style='border: 2px solid #bbb;'>", unsafe_allow_html=True)
 
 with st.container():
     left_col,right_col = st.columns(2)
@@ -259,7 +261,7 @@ with st.container():
     with right_col:
         st.subheader('Lease age and Depreciation')
         st.write('''
-        ##### **Lease age matters more for mid-aged flats than very old ones due to diminishing marginal impact.**
+        ###### **Lease age matters more for mid-aged flats than very old ones due to diminishing marginal impact.**
         - Remaining_lease_years has less importance than lease_commence_year.
         - For flats above 30 years of age, depreciation due to lease loss slows. 
         - Could be due to Government Schemes, Locational advantages and Home Improvement Programmes.
