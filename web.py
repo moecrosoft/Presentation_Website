@@ -99,10 +99,12 @@ with col2:
 
     st.markdown("<hr style='border: 2px solid #bbb;'>", unsafe_allow_html=True)
 
-    st.subheader('Machine Learning Models Comparison')
+    st.subheader('Machine Learning Model Performance Comparison')
+    st.write('')
+    st.write('')
 
     img = Image.open('ML.jpg')
-    st.image(img,caption='ML Models Comparison',use_column_width=True)
+    st.image(img,use_column_width=True)
 
 # with col3:
 #     with open('charts.json','r') as f:
