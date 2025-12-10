@@ -301,8 +301,8 @@ with st.container():
         fmt=".2f", 
         square=True
         )
-        ax.set_title("Correlation Between Important Features and Resale Price", fontsize=20)
-        ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha='center')
+        ax.set_title("Correlation Between Important Features and Resale Price\n", fontsize=20)
+        ax.set_xticklabels(ax.get_xticklabels(), rotation=45)
         ax.set_yticklabels(ax.get_yticklabels(), rotation=0, va='center')
         st.pyplot(fig, use_container_width=True)
         
