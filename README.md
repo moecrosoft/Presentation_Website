@@ -10,8 +10,8 @@ It highlights **data exploration, feature engineering, and key insights** throug
 - Matplotlib, Seaborn
 - Pillow
 
-Install dependencies with:  
-  pip install -r requirements.txt
+## Install dependencies 
+- pip install -r requirements.txt
 
-How to Run:
-  streamlit run web.py
+## How to Run
+- streamlit run web.py
